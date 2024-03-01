@@ -1,0 +1,3400 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  overflow-x: hidden;
+}
+
+/* ======= Fonts Poppins ======= */
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+/* ======= Navbar ======== */
+.nav-bar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  margin: auto;
+  padding: 10px 60px;
+}
+
+/* ======== Navbar Left ======= */
+.nav-bar .left ul {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.nav-bar .showMenu{
+font-size: 20px;
+font-weight: 600;
+color: #555;
+opacity: 1;
+
+}
+.nav-bar .left ul .closeLeft{
+ opacity: 0;
+}
+
+.nav-bar .left ul li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+.nav-bar .left ul li::after {
+  content: '';
+  width: 0%;
+  height: 3px;
+  margin: auto;
+  display: block;
+  background-color: #0861BF;
+  margin-top: 3px;
+}
+
+.nav-bar .left ul li:hover::after {
+  width: 100%;
+  transition: 0.5s;
+}
+
+.nav-bar .left ul li:hover {
+  color: #0058B7;
+}
+
+.nav-bar .left ul li .links {
+  color: #2e4057;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.nav-bar .left ul li .empty {
+  font-size: 20px;
+}
+
+/* ======= Navbar Center ========= */
+.nav-bar .center img {
+  width: 50px;
+}
+
+/* ======= Navbar Right ====== */
+.nav-bar .right ul {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.nav-bar .right ul li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+.nav-bar .right ul li::after {
+  content: '';
+  width: 0%;
+  height: 3px;
+  margin: auto;
+  display: block;
+  background-color: #0861BF;
+  margin-top: 3px;
+}
+
+.nav-bar .right ul li:hover::after {
+  width: 100%;
+  transition: 0.5s;
+}
+
+.nav-bar .right ul li:hover {
+  color: #0058B7;
+}
+
+.nav-bar .right ul li .links {
+  color: #2e4057;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.nav-bar .right ul li .empty {
+  font-size: 20px;
+}
+
+/* ======== Home Page ========= */
+
+/* ======= Header ======= */
+.header {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+  margin: 45px auto 35px;
+  padding: 0px 30px;
+}
+
+/* ======== Header Image 1 ======== */
+.header .image1 {
+  flex: 4;
+  position: relative;
+}
+
+.header .image1 img {
+  width: 100%;
+}
+
+/* ====== Image 1 Text ========= */
+.header .image1 .text {
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  transform: translate(-10%, -40%);
+}
+
+.header .image1 .text p {
+  font-size: 17px;
+  font-weight: 400;
+  text-transform: capitalize;
+  color: #555;
+  padding-bottom: 5px;
+  overflow-y: hidden;
+}
+
+.header .image1 .text h3 {
+  font-size: 35px;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: #555;
+  padding-bottom: 15px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.header .image1 .text span {
+  font-size: 17px;
+  font-weight: 400;
+  text-transform: capitalize;
+  color: #555;
+  padding-bottom: 5px;
+  cursor: pointer;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.header .image1 .text span:hover {
+  color: #0861BF;
+  transition: 0.5s;
+}
+
+.header .image1 .text span::after {
+  content: '';
+  width: 20%;
+  height: 2px;
+  display: block;
+  margin-top: 5px;
+  background-color: #2e4057;
+  border-radius: 5px;
+}
+
+/* ======== Header Image 2 ======== */
+.header .image2 {
+  flex: 2;
+  position: relative;
+}
+
+.header .image2 img {
+  width: 100%;
+}
+
+/* ===== Header Image 2 Text ===== */
+.header .image2 .text-2 {
+  position: absolute;
+  top: -100%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  opacity: 0;
+}
+
+.header:hover .text-2 {
+  top: 5%;
+  left: 50%;
+  opacity: 1;
+  transition: 1s;
+}
+
+.header .image2 .text-2 span {
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: capitalize;
+  color: #555;
+  padding-bottom: 15px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.header .image2 .text-2 h4 {
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: capitalize;
+  color: #555;
+  padding-bottom: 10px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.header .image2 .text-2 button {
+  display: inline-block;
+  padding: 10px 35px;
+  color: #fff;
+  background-color: #0861BF;
+  border-radius: 0.5rem;
+  font-size: 14px;
+}
+
+.header .image2 .text-2 button:hover {
+  color: #ccc;
+  background-color: #0058B7;
+  transition: 0.5s;
+}
+
+/* ====== Image 2 Bottom Text ====== */
+.header .image2 .bottom-text {
+  margin: auto;
+  text-align: left;
+  margin-top: 40px;
+}
+
+.header .image2 .bottom-text p {
+  font-size: 14px;
+  text-transform: capitalize;
+  color: #555;
+  text-decoration: underline;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.header .image2 .bottom-text h3 {
+  font-size: 25px;
+  font-weight: 400;
+  text-transform: capitalize;
+  color: #555;
+  padding-bottom: 10px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+/* ======= Section 1 ======== */
+.sect-1 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 6rem;
+  margin: 90px auto 60px;
+  padding: 0px 30px;
+}
+
+/* ======== Section Part Left ========= */
+.sect-1 .part-left {
+  flex: 1;
+  border: 1px solid #ccc;
+  padding: 10px;
+  position: relative;
+}
+
+.sect-1 .part-left img {
+  width: 100%;
+}
+
+/* ===== Left Text ===== */
+.sect-1 .part-left .left-text {
+  position: absolute;
+  top: 28%;
+  left: 10%;
+  transform: translate(-10%, -28%);
+  text-align: center;
+}
+
+.sect-1:hover .left-text {
+  position: absolute;
+  top: 33%;
+  left: 10%;
+  transform: translate(-10%, -33%);
+  text-align: center;
+  transition: 0.5s;
+}
+
+.sect-1 .part-left .left-text p {
+  font-size: 13px;
+  text-transform: capitalize;
+  color: #555;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.sect-1 .part-left .left-text h4 {
+  font-size: 30px;
+  font-weight: 400;
+  text-transform: capitalize;
+  color: #555;
+  padding-bottom: 10px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.sect-1 .part-left .left-text .see-more {
+  display: inline-block;
+  padding: 10px 25px;
+  color: #fff;
+  background-color: #0861BF;
+  border-radius: 0.5rem;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.sect-1 .part-left .left-text .see-more:hover {
+  color: #ccc;
+  background-color: #0058B7;
+  transition: 0.5s;
+}
+
+/* ======== Section Part Right ========= */
+.sect-1 .part-right {
+  flex: 1;
+}
+
+.sect-1 .part-right {
+  text-align: left;
+}
+
+.sect-1 .part-right h1 {
+  font-size: 40px;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: #555;
+  padding-bottom: 15px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.sect-1 .part-right p {
+  font-size: 13px;
+  text-transform: capitalize;
+  color: #555;
+  margin-bottom: 10px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.sect-1 .part-right button {
+  font-size: 17px;
+  font-weight: 400;
+  text-transform: capitalize;
+  color: #555;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+
+.sect-1 .part-right button::after {
+  content: '';
+  width: 90%;
+  height: 2px;
+  display: block;
+  margin-top: 5px;
+  background-color: #2e4057;
+  border-radius: 5px;
+}
+
+.sect-1 .part-right button:hover {
+  color: #0861BF;
+  transition: 0.5s;
+}
+
+/* ===== Hading ===== */
+.hading {
+  width: 100%;
+  text-align: center;
+  margin: 80px auto 40px;
+}
+
+.hading h1 {
+  font-size: 32px;
+  font-weight: 500;
+  color: #555;
+  padding: 0px 0px 10px;
+  text-transform: capitalize;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.hading h1::after {
+  content: '';
+  width: 10%;
+  height: 2px;
+  display: block;
+  margin: auto;
+  margin-top: 15px;
+  background-color: #2e4057;
+  border-radius: 5px;
+}
+
+.hading p {
+  font-size: 15px;
+  font-weight: 400;
+  color: #555;
+  text-transform: capitalize;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+/* ========= Section 3 ========= */
+.sec-3 {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  margin: 20px auto 30px;
+  padding: 5px 30px;
+}
+
+/* ====== Section 3 Cart ======= */
+.sec-3 .cart {
+  position: relative;
+  background-color: #efefef;
+  padding: 40px 20px 60px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.sec-3 .cart:hover {
+  background-color: rgba(154, 180, 172, 0.5);
+  transition: 0.5s;
+  box-shadow: 0px 0px 30px 0px;
+  transform: translateY(-1%);
+}
+
+/* ====== Section 3 Cart Image Box =======*/
+.sec-3 .cart .img-box {
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.sec-3 .cart .img-box img {
+  width: 100%;
+  outline: none;
+  overflow: hidden;
+}
+
+/* ====== Section 3 Cart Text Box =======*/
+.sec-3 .cart .text-box {
+  position: relative;
+  text-align: center;
+  padding: 0px 0px 20px;
+}
+
+.sec-3 .cart .text-box h3 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #555;
+  text-transform: capitalize;
+  padding-bottom: 5px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.sec-3 .cart .text-box h3::after {
+  content: '';
+  width: 20%;
+  height: 1px;
+  display: block;
+  margin: auto;
+  margin-top: 2px;
+  background-color: #2e4057;
+  border-radius: 5px;
+}
+
+.sec-3 .cart .text-box p {
+  font-size: 15px;
+  font-weight: 300;
+  color: #555;
+  text-transform: capitalize;
+  padding-bottom: 5px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+/* ===== Section 3 Cart Icons */
+.sec-3 .cart .icons {
+  position: absolute;
+  top: 25%;
+  right: -100%;
+  background-color: #fff;
+  padding: 20px 5px;
+  border-radius: 5px;
+  opacity: 0;
+}
+
+.sec-3 .cart:hover .icons {
+  position: absolute;
+  top: 25%;
+  right: 5%;
+  background-color: #fff;
+  padding: 20px 5px;
+  border-radius: 5px;
+  opacity: 1;
+  transition: 0.5s;
+
+}
+
+.sec-3 .cart .icons .icons-fi {
+  color: #555;
+  font-size: 28px;
+  padding: 5px;
+  margin-bottom: 15px;
+}
+
+.sec-3 .cart .icons .icons-fi:hover {
+  background-color: #0861BF;
+  cursor: pointer;
+}
+
+/* ======= Section 4 ======== */
+.sec-4 {
+  width: 95%;
+  height: 50vh;
+  background-image: linear-gradient(rgba(154, 180, 172, 0.5), rgba(154, 180, 172, 0.5)), url(../src/images/header2.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 40px auto 50px;
+  border-radius: 1rem;
+  position: relative;
+}
+
+/* ======= Section 4 Text ======= */
+.sec-4 .sec-4-text {
+  position: absolute;
+  top: 30%;
+  left: 15%;
+  transform: translate(-30%, -15%);
+}
+
+.sec-4 .sec-4-text {
+  font-size: 15px;
+  font-weight: 600;
+  color: #efefef;
+  text-transform: capitalize;
+  padding-bottom: 15px;
+}
+
+.sec-4 .sec-4-text h4 {
+  font-size: 38px;
+  font-weight: 600;
+  color: #fff;
+  text-transform: capitalize;
+  padding-bottom: 10px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.sec-4 .sec-4-text span {
+  font-size: 15px;
+  font-weight: 400;
+  color: #efefef;
+  text-transform: capitalize;
+  padding-bottom: 5px;
+}
+
+/* ====== Section 5 ======= */
+.sec-5 {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin: 0px auto 50px;
+  padding: 0px 30px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+/* ======== Section 5 Box ======= */
+.sec-5 .sec-5-box {
+  padding: 10px;
+}
+
+/* ======= Section 5 Box Image Part ======== */
+.sec-5 .sec-5-box .box-img {
+  position: relative;
+  border-radius: 0.5rem;
+  overflow-y: hidden;
+}
+
+.sec-5 .sec-5-box .box-img:hover {
+  background-color: rgba(154, 180, 172, 0.5);
+  ;
+  transform: translateY(-3%);
+  transition: 0.5s;
+}
+
+.sec-5 .sec-5-box .box-img img {
+  width: 100%;
+}
+
+/* ====== Section 5 Box Images Icons ======= */
+.sec-5 .sec-5-box .box-img .add-Cart {
+  position: absolute;
+  bottom: -3%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 0px 10px;
+  opacity: 0;
+}
+
+.sec-5 .sec-5-box .box-img:hover .add-Cart {
+  opacity: 1;
+  bottom: 3%;
+  left: 50%;
+  transition: 0.5s;
+}
+
+.sec-5 .sec-5-box .box-img .add-Cart h4 {
+  color: #555;
+  margin-right: 15px;
+  padding: 7px 10px;
+  font-size: 17px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.sec-5 .sec-5-box .box-img .add-Cart h4:hover {
+  background-color: #0861BF;
+  color: #fff;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+/* ====== Section 5 Text Part ======= */
+.sec-5 .sec-5-box .box-text {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.sec-5 .sec-5-box .box-text p {
+  font-size: 15px;
+  font-weight: 400;
+  color: #555;
+  text-transform: capitalize;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.sec-5 .sec-5-box .box-text h3 {
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: #555;
+  padding-bottom: 5px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.sec-5 .sec-5-box .box-text h4 {
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: capitalize;
+  color: #555;
+  padding-bottom: 0px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+/* ======== Section 6 ========= */
+.sec-6 {
+  width: 95%;
+  height: 50vh;
+  background-image: linear-gradient(rgba(30, 38, 35, 0.5), rgba(154, 180, 172, 0.5)), url(../src/images/header3.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 40px auto 50px;
+  border-radius: 1rem;
+  position: relative;
+}
+
+/* ======= Section 6 Text ======= */
+.sec-6 .sec-6-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  overflow-y: hidden;
+}
+
+.sec-6 .sec-6-text p {
+  font-size: 15px;
+  font-weight: 600;
+  color: #efefef;
+  text-transform: capitalize;
+  padding-bottom: 15px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.sec-6 .sec-6-text h4 {
+  font-size: 38px;
+  font-weight: 600;
+  color: #fff;
+  text-transform: capitalize;
+  padding-bottom: 10px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.sec-6 .sec-6-text span {
+  font-size: 15px;
+  font-weight: 400;
+  color: #efefef;
+  text-transform: capitalize;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+/* ===== Section 7 ====== */
+.sec-7 {
+  width: 95%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin: 10px auto 60px;
+
+}
+
+/* ===== Section 7 Cart ======= */
+.sec-7 .sec-7-cart {
+  text-align: center;
+}
+
+.sec-7 .sec-7-cart img {
+  width: 100%;
+}
+
+/* ====== Section 7 Cart Text ======= */
+.sec-7 .sec-7-cart .sec-7-text {
+  margin-top: 40px;
+}
+
+.sec-7 .sec-7-cart .sec-7-text h1 {
+  font-size: 17px;
+  font-weight: 600;
+  color: #555;
+  margin-left: 15px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.sec-7 .sec-7-cart .sec-7-text .date {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.sec-7 .sec-7-cart .sec-7-text .date .icons {
+  color: #555;
+  font-size: 36px;
+  padding: 0px 10px;
+
+}
+
+.sec-7 .sec-7-cart .sec-7-text .date p {
+  color: #555;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.sec-7 .sec-7-cart .sec-7-text h5 {
+  color: #555;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 10px;
+  line-height: 25px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+/* ======= Footer ========= */
+.footer {
+  width: 100%;
+  height: 60vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: flex-start;
+  margin: 50px auto 0px;
+  padding: 80px 30px 60px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #B4DCDC;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+/* ======= Footer Links ======= */
+
+.footer .footer-links {
+  text-align: left;
+  align-items: baseline;
+  overflow: hidden;
+}
+
+.footer .footer-links img {
+  width: 50px;
+}
+
+.footer .footer-links h5 {
+  color: #555;
+  font-size: 17px;
+  font-weight: 400;
+  padding: 10px 0px 5px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.footer .footer-links p {
+  color: #555;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 5px 0px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+/* ===== Footer Links Ul ===== */
+.footer .footer-links ul {
+  list-style-type: none;
+}
+
+.footer .footer-links ul li {
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+
+.footer .footer-links ul li .footer-tags {
+  color: #555;
+}
+
+.footer .footer-links ul li .footer-tags:hover {
+  color: #0861BF;
+  transition: 0.5s;
+}
+
+.footer .footer-links ul li .footer-tags:after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  display: block;
+  background-color: #0861BF;
+  margin-top: 3px;
+}
+
+.footer .footer-links ul li .footer-tags:hover:after {
+  width: 30%;
+  transition: 0.5s;
+}
+
+/* ===== Footer Input ===== */
+.footer .footer-links h2 {
+  font-size: 23px;
+  font-weight: 600;
+  color: #333;
+  padding-bottom: 15px;
+}
+
+.footer .footer-links .input-elem {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 0px 20px;
+  border-radius: 0.3rem;
+  margin-bottom: 35px;
+}
+
+.footer .footer-links .input-elem input {
+  width: 80%;
+  border: none;
+  outline: none;
+  display: inline-block;
+  padding: 10px 0px;
+
+}
+
+.footer .footer-links .input-elem button {
+  color: #555;
+  font-size: 15px;
+}
+
+.footer .footer-links .input-elem button:hover {
+  color: #0861BF;
+  transition: 0.5s;
+}
+
+/* ======= Footer Links Payment Method ======= */
+.footer .footer-links .payment-gateway {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer .footer-links .payment-gateway {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer .footer-links .payment-gateway .pay-icons {
+  color: rgba(48, 104, 196, 0.946);
+  font-size: 35px;
+}
+
+.footer .footer-links .payment-gateway .pay-icons:hover {
+  color: #fff;
+  transition: 0.5s;
+}
+
+/* ===== Copyright ===== */
+.copy-right {
+  width: 100%;
+  background-color: #B4DCDC;
+  margin: auto;
+  text-align: center;
+  padding: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.copy-right .lia {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #555;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* ======== Media Query Under 1130px ======= */
+@media screen and (max-width:1130px) {
+  body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+
+  /* ======= Header ======= */
+  .header {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    align-items: center;
+    margin: 45px auto 35px;
+    padding: 0px 30px;
+  }
+
+  /* ====== Image 1 Text ========= */
+  .header .image1 .text {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    transform: translate(-10%, -40%);
+  }
+
+  .header .image1 .text p {
+    font-size: 17px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #555;
+    padding-bottom: 5px;
+  }
+
+  .header .image1 .text h3 {
+    font-size: 35px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #555;
+    padding-bottom: 15px;
+  }
+
+  .header .image1 .text span {
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #555;
+    padding-bottom: 5px;
+    cursor: pointer;
+  }
+
+  /* ====== Section 1 ===== */
+  .sect-1 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 6rem;
+    margin: 90px auto 60px;
+    padding: 0px 30px;
+  }
+
+  .sect-1 .part-left .left-text p {
+    font-size: 12px;
+    text-transform: capitalize;
+    color: #555;
+  }
+
+  .sect-1 .part-left .left-text h4 {
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #555;
+    padding-bottom: 10px;
+  }
+
+  .sect-1 .part-left .left-text .see-more {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #0861BF;
+    border-radius: 0.5rem;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+  /* ===== Hading ===== */
+  .hading {
+    width: 100%;
+    text-align: center;
+    margin: 80px auto 40px;
+  }
+
+  .hading h1 {
+    font-size: 28px;
+    font-weight: 500;
+    color: #555;
+    padding: 0px 0px 10px;
+    text-transform: capitalize;
+  }
+
+  .hading p {
+    font-size: 15px;
+    font-weight: 500;
+    color: #555;
+    padding: 0px 0px 10px;
+    text-transform: capitalize;
+  }
+
+  /* ========= Section 3 ========= */
+  .sec-3 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    margin: 20px auto 30px;
+    padding: 5px 30px;
+  }
+
+  /* ======= Section 4 Text ======= */
+  .sec-4 .sec-4-text {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -15%);
+    text-align: center;
+  }
+
+  .sec-4 .sec-4-text p {
+    font-size: 13px;
+    font-weight: 600;
+    color: #efefef;
+    text-transform: capitalize;
+    padding-bottom: 15px;
+  }
+
+  .sec-4 .sec-4-text h4 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: capitalize;
+    padding-bottom: 5px;
+  }
+
+  .sec-4 .sec-4-text span {
+    font-size: 13px;
+    font-weight: 400;
+    color: #efefef;
+    text-transform: capitalize;
+    padding-bottom: 5px;
+  }
+
+  .sec-5 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin: 0px auto 50px;
+    padding: 0px 30px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+
+  /* ======= Section 6 Text ======= */
+  .sec-6 .sec-6-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .sec-6 .sec-6-text p {
+    font-size: 15px;
+    font-weight: 600;
+    color: #efefef;
+    text-transform: capitalize;
+    padding-bottom: 5px;
+  }
+
+  .sec-6 .sec-6-text h4 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: capitalize;
+    padding-bottom: 10px;
+  }
+
+  .sec-6 .sec-6-text span {
+    font-size: 13px;
+    font-weight: 400;
+    color: #efefef;
+    text-transform: capitalize;
+    padding-bottom: 5px;
+  }
+
+  /* ===== Section 7 ===== */
+  .sec-7 {
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin: 10px auto 60px;
+
+  }
+
+  /* ======= Footer ========= */
+  .footer {
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: flex-start;
+    margin: 50px auto 0px;
+    padding: 40px 30px 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #B4DCDC;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+
+  /* ======= Footer Links ======= */
+
+  .footer .footer-links {
+    text-align: left;
+    align-items: baseline;
+    overflow: hidden;
+    margin-bottom: 40px;
+  }
+}
+
+/* ========= Media Query Under 730px ======== */
+@media screen and (max-width:730px) {
+  body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+
+  /* ======= Header ======= */
+  .header {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    align-items: center;
+    margin: 45px auto 35px;
+    padding: 0px 30px;
+  }
+
+  /* ====== Image 1 Text ========= */
+  .header .image1 .text {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    transform: translate(-10%, -40%);
+  }
+
+  .header .image1 .text p {
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #555;
+    padding-bottom: 5px;
+  }
+
+  .header .image1 .text h3 {
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #555;
+    padding-bottom: 15px;
+    line-height: 30px;
+  }
+
+  .header .image1 .text span {
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #555;
+    padding-bottom: 5px;
+    cursor: pointer;
+  }
+
+  /* ====== Section 1 ===== */
+  .sect-1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6rem;
+    margin: 90px auto 60px;
+    padding: 0px 30px;
+  }
+
+  .sect-1 .part-left .left-text p {
+    font-size: 12px;
+    text-transform: capitalize;
+    color: #555;
+  }
+
+  .sect-1 .part-left .left-text h4 {
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #555;
+    padding-bottom: 5px;
+  }
+
+  .sect-1 .part-left .left-text .see-more {
+    display: inline-block;
+    padding: 8px 16px;
+    color: #fff;
+    background-color: #0861BF;
+    border-radius: 0.5rem;
+    font-size: 12px;
+    margin-top: 10px;
+  }
+
+  /* ======== Section Part Right ========= */
+  .sect-1 .part-right {
+    flex: 1;
+  }
+
+  .sect-1 .part-right {
+    text-align: left;
+  }
+
+  .sect-1 .part-right h1 {
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #555;
+    padding-bottom: 15px;
+  }
+
+  .sect-1 .part-right p {
+    font-size: 13px;
+    text-transform: capitalize;
+    color: #555;
+    margin-bottom: 10px;
+  }
+
+  .sect-1 .part-right button {
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #555;
+    padding-bottom: 10px;
+    cursor: pointer;
+  }
+
+  /* ===== Hading ===== */
+  .hading {
+    width: 100%;
+    text-align: center;
+    margin: 80px auto 40px;
+  }
+
+  .hading h1 {
+    font-size: 25px;
+    font-weight: 500;
+    color: #555;
+    padding: 0px 0px 10px;
+    text-transform: capitalize;
+  }
+
+  .hading p {
+    font-size: 13px;
+    font-weight: 500;
+    color: #555;
+    padding: 0px 0px 10px;
+    text-transform: capitalize;
+  }
+
+  /* ========= Section 3 ========= */
+  .sec-3 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 3rem;
+    margin: 20px auto 30px;
+    padding: 5px 30px;
+  }
+
+  /* ======= Section 4 Text ======= */
+  .sec-4 .sec-4-text {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -15%);
+    text-align: center;
+  }
+
+  .sec-4 .sec-4-text p {
+    font-size: 13px;
+    font-weight: 600;
+    color: #efefef;
+    text-transform: capitalize;
+    padding-bottom: 15px;
+  }
+
+  .sec-4 .sec-4-text h4 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: capitalize;
+    padding-bottom: 5px;
+  }
+
+  .sec-4 .sec-4-text span {
+    font-size: 13px;
+    font-weight: 400;
+    color: #efefef;
+    text-transform: capitalize;
+    padding-bottom: 5px;
+  }
+
+  .sec-5 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+    margin: 0px auto 50px;
+    padding: 0px 30px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+
+  /* ======= Section 6 Text ======= */
+  .sec-6 .sec-6-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .sec-6 .sec-6-text p {
+    font-size: 15px;
+    font-weight: 600;
+    color: #efefef;
+    text-transform: capitalize;
+    padding-bottom: 5px;
+  }
+
+  .sec-6 .sec-6-text h4 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: capitalize;
+    padding-bottom: 10px;
+  }
+
+  .sec-6 .sec-6-text span {
+    font-size: 13px;
+    font-weight: 400;
+    color: #efefef;
+    text-transform: capitalize;
+    padding-bottom: 5px;
+  }
+
+  /* ===== Section 7 ===== */
+  .sec-7 {
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+    margin: 10px auto 60px;
+
+  }
+
+  /* ======= Footer ========= */
+  .footer {
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: baseline;
+    margin: 50px auto 0px;
+    padding: 40px 30px 60px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #B4DCDC;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+
+  /* ======= Footer Links ======= */
+
+  .footer .footer-links {
+    text-align: left;
+    align-items: baseline;
+    overflow: hidden;
+    margin-bottom: 40px;
+  }
+}
+
+/* ======= Shop Component ===== */
+.shop-header {
+  width: 100%;
+  height: 70vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: #eaddcc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 50px auto 60px;
+  padding: 100px 30px 0px;
+}
+
+/* ========= Header Text ======== */
+.shop-header .head-left {
+  margin-top: 30px;
+  display: block;
+  overflow: hidden;
+  text-align: left;
+}
+
+.shop-header .head-left h2 {
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 52px;
+  color: #555;
+  display: inline-block;
+  padding-bottom: 20px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.shop-header .head-left p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #555;
+  line-height: 32px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.shop-header .head-left button {
+  display: inline-block;
+  padding: 11px 28px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.shop-header .head-left button::after {
+  content: '';
+  width: 100%;
+  height: 2px;
+  margin: auto;
+  display: block;
+  background-color: #2e4057;
+  margin-top: 3px;
+}
+
+.shop-header .head-left button:hover {
+  color: #0861BF;
+  transition: 0.5s;
+}
+
+/* ======= Header Image ====== */
+.shop-header .head-right {
+  outline: none;
+  overflow: hidden;
+}
+
+.shop-header .head-right img {
+  width: 100%;
+}
+
+/* ======= Shop Section 1 ======== */
+.shop-sec1 {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  margin: 50px auto 40px;
+  padding: 0px 50px;
+  overflow-x: hidden;
+}
+
+/* ======= Shop Section 1 Left Part ======== */
+.shop-sec1 .shop-text {
+  flex: 1;
+  overflow-y: hidden;
+  display: block;
+}
+
+.shop-sec1 .shop-text ul {
+  overflow-y: hidden;
+  margin-bottom: 20px;
+}
+
+.shop-sec1 .shop-text ul h5 {
+  font-size: 17px;
+  font-weight: 600;
+  color: #555;
+  padding-bottom: 10px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.shop-sec1 .shop-text ul li {
+  padding-bottom: 5px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #555;
+}
+
+.shop-sec1 .shop-text ul li {
+  padding-bottom: 5px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #555;
+}
+
+.shop-sec1 .shop-text ul li::after {
+  content: '';
+  width: 0%;
+  height: 1px;
+  display: block;
+  background-color: #0058B7;
+  margin-top: 3px;
+}
+
+.shop-sec1 .shop-text ul li:hover::after {
+  width: 20%;
+  transition: 0.5s;
+}
+
+.shop-sec1 .shop-text ul li:hover {
+  color: #0058B7;
+  transition: 0.5s;
+}
+
+/* ======= Materials  Check Box======= */
+.shop-sec1 .shop-text .check-boxes {
+  display: flex;
+  align-items: center;
+  padding-bottom: 5px;
+}
+
+.shop-sec1 .shop-text .check-boxes input {
+  color: #555;
+}
+
+.shop-sec1 .shop-text .check-boxes p {
+  color: #555;
+  padding-left: 5px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+/* ====== Average Rating ===== */
+.shop-sec1 .shop-text .rating {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.shop-sec1 .shop-text .rating {
+  display: flex;
+  align-items: center;
+}
+
+.shop-sec1 .shop-text input {
+  color: #555;
+}
+
+.shop-sec1 .shop-text p {
+  padding-left: 5px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.shop-sec1 .shop-text .star {
+  color: #ff5461;
+  font-size: 20px;
+  padding-left: 5px;
+}
+
+/* ======= Shop Section 1 Right Images Part ======== */
+.shop-sec1 .shop-image {
+  flex: 4;
+}
+
+.shop-sec1 .shop-image .shop-sec {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* ======= Media Query Under 1130px ========*/
+@media screen and (max-width:1130px) {
+
+  /* ========= Header Text ======== */
+  .shop-header .head-left {
+    margin-top: 20px;
+    display: block;
+    overflow: hidden;
+    text-align: left;
+  }
+
+  .shop-header .head-left h2 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 52px;
+    color: #555;
+    display: inline-block;
+    padding-bottom: 20px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+
+  .shop-header .head-left p {
+    font-size: 15px;
+    font-weight: 400;
+    color: #555;
+    line-height: 32px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+
+  .shop-header .head-left button {
+    display: inline-block;
+    padding: 11px 28px;
+    font-size: 13px;
+    font-weight: 400;
+  }
+
+  .shop-sec1 .shop-text ul h5 {
+    font-size: 15px;
+    font-weight: 600;
+    color: #555;
+    padding-bottom: 10px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+
+  .shop-sec1 .shop-image .shop-sec {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+/* ======= Media Query Under 730px Of Shop Page ========*/
+
+@media screen and (max-width:730px) {
+
+  /* ======= Shop Component ===== */
+  .shop-header {
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 3rem;
+    background-color: #eaddcc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 50px auto 60px;
+    padding: 100px 30px 0px;
+  }
+
+  /* ========= Header Text ======== */
+  .shop-header .head-left {
+    margin-top: 20px;
+    display: block;
+    overflow: hidden;
+    text-align: left;
+  }
+
+  .shop-header .head-left h2 {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 42px;
+    color: #555;
+    display: inline-block;
+    overflow-y: hidden;
+    padding-bottom: 20px;
+  }
+
+  .shop-header .head-left p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #555;
+    line-height: 30px;
+  }
+
+  .shop-header .head-left button {
+    display: inline-block;
+    padding: 11px 28px;
+    font-size: 13px;
+    font-weight: 400;
+  }
+
+  .shop-sec1 .shop-text ul h5 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #555;
+    padding-bottom: 10px;
+  }
+
+  /* ======= Shop Section 1 Left Part ======== */
+  .shop-sec1 .shop-text {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .shop-sec1 .shop-text {
+    justify-content: center;
+    text-align: center;
+  }
+
+  /* ======= Materials  Check Box======= */
+  .shop-sec1 .shop-text .check-boxes {
+    display: flex;
+    align-items: center;
+    padding-bottom: 5px;
+    justify-content: center;
+  }
+
+  .shop-sec1 .shop-text .check-boxes p {
+    font-size: 13px;
+  }
+
+  /* ====== Average Rating ===== */
+  .shop-sec1 .shop-text .rating {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    justify-content: center;
+  }
+
+  .shop-sec1 .shop-text p {
+    padding-left: 5px;
+    font-size: 13px;
+  }
+
+  .shop-sec1 .shop-text .star {
+    color: #ff5461;
+    font-size: 17px;
+    padding-left: 5px;
+  }
+
+  .shop-sec1 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .shop-sec1 .shop-image .shop-sec {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .shop-sec1 .shop-text ul li::after {
+    content: '';
+    width: 0%;
+    height: 1px;
+    display: block;
+    background-color: #0058B7;
+    margin-top: 3px;
+    margin: auto;
+  }
+
+  /* ======= Shop Section 1 Left Part ======== */
+  .shop-sec1 .shop-text {
+    flex: 1;
+    overflow-y: hidden;
+    display: block;
+    text-align: center;
+  }
+}
+
+/* ========= Blogs Page ======= */
+.blogs-header {
+  width: 100%;
+  height: 60vh;
+  background-color: #e8f6f6;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow-y: hidden;
+  margin: 50px auto 40px;
+  position: relative;
+}
+
+/* ======== Header Text ======== */
+.blogs-header .blogs-head-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  overflow-y: hidden;
+}
+
+.blogs-header .blogs-head-text p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #555;
+  overflow-y: hidden;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.blogs-header .blogs-head-text h1 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #555;
+  overflow-y: hidden;
+  line-height: 52px;
+  margin-bottom: 10px;
+}
+
+.blogs-header .blogs-head-text button {
+  font-size: 13px;
+  font-weight: 400;
+  color: #555;
+  margin: auto;
+  text-align: center;
+  display: inline-block;
+}
+
+.blogs-header .blogs-head-text button::after {
+  content: '';
+  width: 100%;
+  height: 2px;
+  margin: auto;
+  display: block;
+  background-color: #0861BF;
+  margin-top: 5px;
+}
+
+.blogs-header .blogs-head-text button:hover {
+  color: #0861BF;
+  transition: 0.5s;
+}
+
+/* ======== Blogs Section 1 ========= */
+.blogs-sec {
+  width: 95%;
+  display: block;
+  margin: 50px auto 40px;
+  padding: 0px 0px;
+  border: 1px solid #ccc;
+}
+
+/* ======= Section Carts ====== */
+.blogs-sec .blog-cart {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.blogs-sec .blog-cart img {
+  width: 100%;
+  height: 70vh;
+  cursor: pointer;
+  outline: none;
+  overflow: hidden;
+  overflow-y: hidden;
+}
+
+.blogs-sec .blog-cart img:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+/* ======= Section Carts Text ======= */
+.blogs-sec .blog-cart h1 {
+  font-size: 23px;
+  font-weight: 700;
+  display: inline-block;
+  color: #555;
+  padding-bottom: 15px;
+  margin-top: 40px;
+  overflow-y: hidden;
+}
+
+.blogs-sec .blog-cart .date {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.blogs-sec .blog-cart .date {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #555;
+  font-size: 16px;
+}
+
+.blogs-sec .blog-cart .date p {
+  font-size: 14px;
+  color: #555;
+  padding: 0px 5px;
+}
+
+.blogs-sec .blog-cart h6 {
+  font-size: 16px;
+  color: #555;
+  margin-top: 20px;
+  overflow-y: hidden;
+  line-height: 32px;
+
+}
+
+/* ========= Media Query Under 1130px ========= */
+@media screen and (max-width:1130px) {
+  .blogs-sec .blog-cart img {
+    width: 100%;
+    height: fit-content;
+    cursor: pointer;
+    outline: none;
+    overflow: hidden;
+    overflow-y: hidden;
+  }
+
+  /* ======== Header Text ======== */
+  .blogs-header .blogs-head-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    overflow-y: hidden;
+  }
+
+  .blogs-header .blogs-head-text h1 {
+    font-size: 26px;
+    font-weight: 700;
+    color: #555;
+    display: inline-block;
+    overflow-y: hidden;
+    line-height: 42px;
+    margin-bottom: 10px;
+  }
+
+  .blogs-header .blogs-head-text button {
+    font-size: 13px;
+    font-weight: 400;
+    color: #555;
+
+  }
+}
+
+/* ========= Media Query Under 730px ========= */
+@media screen and (max-width:730px) {
+  .blogs-sec .blog-cart img {
+    width: 100%;
+    height: fit-content;
+    cursor: pointer;
+    outline: none;
+    overflow: hidden;
+    overflow-y: hidden;
+  }
+
+  /* ======== Header Text ======== */
+  .blogs-header .blogs-head-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    overflow-y: hidden;
+  }
+
+  .blogs-header .blogs-head-text h1 {
+    font-size: 17px;
+    font-weight: 700;
+    color: #555;
+    display: inline-block;
+    overflow-y: hidden;
+    line-height: 32px;
+    margin-bottom: 10px;
+  }
+
+  .blogs-header .blogs-head-text button {
+    font-size: 13px;
+    font-weight: 400;
+    color: #555;
+
+  }
+
+  /* ======= Section Carts Text ======= */
+  .blogs-sec .blog-cart h1 {
+    font-size: 16px;
+    font-weight: 700;
+    display: inline-block;
+    color: #555;
+    padding-bottom: 15px;
+    margin-top: 40px;
+    overflow-y: hidden;
+  }
+}
+
+/* ========= Media Query Over 1300px ========= */
+@media screen and (min-width:1430px) {
+  .blogs-sec .blog-cart img {
+    width: 100%;
+    height: 90vh;
+    cursor: pointer;
+    outline: none;
+    overflow: hidden;
+    overflow-y: hidden;
+  }
+
+}
+
+/* ========About Page ====== */
+.about-header {
+  width: 100%;
+  height: 60vh;
+  background-image: linear-gradient(rgba(43, 52, 49, 0.5), rgba(43, 51, 49, 0.5)), url(images/Blog4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 40px auto 60px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* ======= About Text ======= */
+.about-header .about-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 10px;
+}
+
+.about-header .about-text p {
+  width: 15%;
+  font-size: 16px;
+  font-weight: 500;
+  color: #efefef;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 5px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  text-align: center;
+}
+
+.about-header .about-text h3 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #efefef;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  margin-bottom: 10px;
+}
+
+.about-header .about-text h4 {
+  font-size: 13px;
+  font-weight: 400;
+  color: #efefef;
+  text-transform: capitalize;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  margin-bottom: 5px;
+}
+
+/* ======= About Section 1 ======= */
+.about-sec-1 {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  padding: 0px 50px;
+  margin: 70px auto 50px;
+  align-items: flex-start;
+}
+
+/* ======= Section Text ====== */
+.about-sec-1 .about-sec-text {
+  padding: 30px 0px;
+}
+
+.about-sec-1 .about-sec-text h1 {
+  font-size: 35px;
+  font-weight: 700;
+  color: #555;
+  margin-bottom: 10px;
+  padding: 5px 20px;
+  background-color: #e6f2f2;
+  display: inline-block;
+  border-radius: 0.5rem;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.about-sec-1 .about-sec-text p {
+  font-size: 15px;
+  font-weight: 400;
+  color: #555;
+  display: inline-block;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  padding-top: 10px;
+  line-height: 22px;
+  margin-bottom: 20px;
+}
+
+/* ======= Text Insides ======== */
+.about-sec-1 .about-sec-text .inside {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  overflow: hidden;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 10px;
+}
+
+/* ======= Text Insides ======== */
+.about-sec-1 .about-sec-text .inside .inside-text {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.about-sec-1 .about-sec-text .inside .inside-text h4 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #555;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.about-sec-1 .about-sec-text .inside .inside-text p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #555;
+  overflow-y: hidden;
+}
+
+/* ======= About Section 1 Images ======= */
+.about-sec-1 .about-sec-image {
+  padding: 30px 0px;
+}
+
+.about-sec-1 .about-sec-image img {
+  width: 100%;
+  outline: none;
+  overflow: hidden;
+}
+
+.about-sec-1 .about-sec-image img:hover {
+  transform: scaleX(1.1);
+  transition: 0.5s;
+}
+
+/* ======== About Section 2 ======== */
+.about-sec2 {
+  width: 100%;
+  height: 60vh;
+  margin: 40px auto 30px;
+  padding: 0px 40px;
+  background-image: linear-gradient(rgba(43, 52, 49, 0.5), rgba(43, 51, 49, 0.5)), url(images/Blog9.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* ====== About Text  ======== */
+.about-sec2 .about-sec2-text {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -70%);
+  background-color: rgba(186, 222, 210, 0.5);
+  padding: 80px 70px;
+  border-radius: 0.5rem;
+  margin-bottom: 20px;
+}
+
+.about-sec2 .about-sec2-text p {
+  width: 35%;
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+  display: block;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  text-decoration: underline;
+  margin: 5px auto;
+
+}
+
+.about-sec2 .about-sec2-text h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #fff;
+  display: block;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  border-radius: 0.5rem;
+}
+
+/* ======= About Section Media Query ======== */
+
+/* ====== Media Query Under 1130px ====== */
+@media screen and (max-width:1130px) {
+
+  /* ======= About Text ======= */
+  .about-header .about-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 10px;
+  }
+
+  .about-header .about-text p {
+    width: 15%;
+    font-size: 14px;
+    font-weight: 500;
+    color: #efefef;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 5px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    text-align: center;
+
+  }
+
+  .about-header .about-text h3 {
+    font-size: 27px;
+    font-weight: 700;
+    color: #efefef;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin-bottom: 10px;
+  }
+
+  .about-header .about-text h4 {
+    font-size: 13px;
+    font-weight: 400;
+    color: #efefef;
+    text-transform: capitalize;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin-bottom: 5px;
+    line-height: 26px;
+  }
+
+  /* ======= About Section 1 ======= */
+  .about-sec-1 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+    padding: 0px 50px;
+    margin: 70px auto 50px;
+    align-items: flex-start;
+  }
+
+  /* ======= Section Text ====== */
+  .about-sec-1 .about-sec-text {
+    padding: 30px 0px;
+  }
+
+  .about-sec-1 .about-sec-text h1 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #555;
+    margin-bottom: 10px;
+    padding: 5px 20px;
+    background-color: #e6f2f2;
+    display: inline-block;
+    border-radius: 0.5rem;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+
+  .about-sec-1 .about-sec-text p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #555;
+    display: inline-block;
+    overflow-x: hidden;
+  overflow-y: hidden;
+    padding-top: 10px;
+    line-height: 22px;
+    margin-bottom: 20px;
+  }
+
+  /* ======= Text Insides ======== */
+  .about-sec-1 .about-sec-text .inside {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    overflow: hidden;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 10px;
+  }
+
+  /* ======= Text Insides ======== */
+  .about-sec-1 .about-sec-text .inside .inside-text {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+
+  }
+
+  .about-sec-1 .about-sec-text .inside .inside-text h4 {
+    font-size: 17px;
+    font-weight: 700;
+    color: #555;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+
+  .about-sec-1 .about-sec-text .inside .inside-text p {
+    font-size: 13px;
+    font-weight: 400;
+    color: #555;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+
+  .about-sec2 .about-sec2-text h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+    display: block;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    border-radius: 0.5rem;
+  }
+
+  .about-sec2 .about-sec2-text p {
+    width: 35%;
+    font-size: 12px;
+    font-weight: 400;
+    color: #fff;
+    display: block;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    text-decoration: underline;
+    margin: 5px auto;
+  }
+}
+
+/* ====== Media Query Under 730px ====== */
+@media screen and (max-width:730px) {
+
+  /* ======= About Text ======= */
+  .about-header .about-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 10px;
+  }
+
+  .about-header .about-text p {
+    width: 100%;
+    font-size: 13px;
+    font-weight: 500;
+    color: #efefef;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 10px;
+    overflow-y: hidden;
+    text-align: center;
+    margin-left: 30px;
+
+  }
+
+  .about-header .about-text h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #efefef;
+    overflow-y: hidden;
+    margin-bottom: 10px;
+  }
+
+  .about-header .about-text h4 {
+    font-size: 11px;
+    font-weight: 400;
+    color: #efefef;
+    text-transform: capitalize;
+    overflow-y: hidden;
+    margin-bottom: 5px;
+    line-height: 20px;
+  }
+
+  /* ======= About Section 1 ======= */
+  .about-sec-1 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 4rem;
+    padding: 0px 50px;
+    margin: 70px auto 50px;
+    align-items: flex-start;
+  }
+
+  /* ======= Section Text ====== */
+  .about-sec-1 .about-sec-text {
+    padding: 30px 0px;
+  }
+
+  .about-sec-1 .about-sec-text h1 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #555;
+    margin-bottom: 10px;
+    padding: 5px 20px;
+    background-color: #e6f2f2;
+    display: inline-block;
+    border-radius: 0.5rem;
+    overflow: hidden;
+  }
+
+  .about-sec-1 .about-sec-text p {
+    font-size: 12px;
+    font-weight: 400;
+    color: #555;
+    display: inline-block;
+    overflow: hidden;
+    padding-top: 10px;
+    line-height: 22px;
+    margin-bottom: 20px;
+  }
+
+  /* ======= Text Insides ======== */
+  .about-sec-1 .about-sec-text .inside {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    overflow: hidden;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 10px;
+  }
+
+  /* ======= Text Insides ======== */
+  .about-sec-1 .about-sec-text .inside .inside-text {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+
+  }
+
+  .about-sec-1 .about-sec-text .inside .inside-text h4 {
+    font-size: 14px;
+    font-weight: 700;
+    color: #555;
+    overflow-y: hidden;
+  }
+
+  .about-sec-1 .about-sec-text .inside .inside-text p {
+    font-size: 11px;
+    font-weight: 400;
+    color: #555;
+    overflow-y: hidden;
+  }
+
+  .about-sec2 .about-sec2-text h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    display: block;
+    overflow-y: hidden;
+    border-radius: 0.5rem;
+  }
+
+  .about-sec2 .about-sec2-text p {
+    width: 100%;
+    font-size: 11px;
+    font-weight: 400;
+    color: #fff;
+    display: block;
+    overflow-y: hidden;
+    text-decoration: underline;
+    margin: 5px auto;
+
+  }
+
+}
+
+/* ======== Search ========= */
+.search {
+  width: 100%;
+  height: 140vh;
+  background-color: #fff;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+  z-index: 5;
+  transition: 1s;
+}
+
+/* ======= Search Close Icons ======= */
+.search .search-close {
+  position: absolute;
+  top: 3%;
+  right: 2%;
+  font-size: 25px;
+  font-weight: 500;
+  color: #555;
+}
+
+/* ===== Search Text ====== */
+.search .search-text {
+  margin: 80px auto 40px;
+  width: 90%;
+  text-align: center;
+}
+
+.search .search-text h1 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 30px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+/* ======= Search Input ======== */
+.search .search-text .search-input {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  margin: 20px auto 50px;
+}
+
+.search .search-text .search-input input {
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 5px 10px;
+}
+
+.search .search-text .search-input input::placeholder {
+  font-size: 13px;
+  font-weight: 400;
+}
+
+/* ======== Trending ====== */
+.search .trending {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.search .trending h3 {
+  font-size: 17px;
+  font-weight: 400;
+  color: #555;
+  overflow-y: hidden;
+  text-transform: uppercase;
+  margin-right: 10px;
+}
+
+.search .trending p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #555;
+  overflow-y: hidden;
+  padding: 2px 8px;
+  background-color: #d1e5e5;
+  display: inline-block;
+  margin-left: 8px;
+  border-radius: 0.3rem;
+}
+
+.search .trending p:hover {
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+  background-color: #000;
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+/* ======== Categories ======= */
+.search .categories {
+  margin-top: 60px;
+}
+
+/* ======== Categories ======= */
+.search .categories {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 3rem;
+  text-align: center;
+}
+
+/* ======= Cart Image ======== */
+.search .categories .cat-cart-img {
+  background-color: rgba(226, 238, 234, 0.5);
+  padding: 10px;
+}
+
+.search .categories .cat-cart-img img {
+  width: 100%;
+}
+
+/* ========= Cart Text ========= */
+.search .categories .cat-cart-text {
+  margin: 20px 0px;
+}
+
+.search .categories .cat-cart-text h4 {
+  font-size: 15px;
+  font-weight: 400;
+  color: #555;
+  margin-bottom: 5px;
+  overflow-y: hidden;
+}
+
+.search .categories .cat-cart-text p {
+  font-size: 13px;
+  font-weight: 300;
+  color: #555;
+
+}
+/* ========== Search Section Media Query Under 730px ========== */
+@media screen and (max-width:730px) {
+  /* ======== Search ========= */
+.search {
+  width: 100%;
+  height: fit-content;
+  background-color: #fff;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+  z-index: 100;
+  transition: 1s;
+  overflow-y: hidden;
+}
+
+  .search .search-text h1 {
+    font-size: 17px;
+    font-weight: 500;
+    color: #555;
+    margin-bottom: 30px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }    
+  .search .trending h3 {
+    font-size: 13px;
+    font-weight: 400;
+    color: #555;
+    overflow-y: hidden;
+    text-transform: uppercase;
+    margin-right: 10px;
+  }  
+  .search .trending p {
+    font-size: 12px;
+    font-weight: 400;
+    color: #555;
+    overflow-y: hidden;
+    padding: 2px 8px;
+    background-color: #d1e5e5;
+    display: inline-block;
+    margin-left: 8px;
+    border-radius: 0.3rem;
+  }
+  /* ======== Categories ======= */
+.search .categories {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  text-align: center;
+}
+  
+}
+
+/* ======== Contact Section ======== */
+.contact-sec {
+  width: 100%;
+  height: fit-content;
+  padding: 100px 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+  align-items: flex-start;
+  background-color: #e9f0f6;
+  margin: 50px auto 40px;
+}
+
+/* ======= Contact Left ======= */
+.contact-sec .contact-part h2 {
+  font-size: 27px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 15px;
+  overflow-y: hidden;
+}
+
+.contact-sec .contact-part p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #333;
+  margin-bottom: 15px;
+  overflow-y: hidden;
+}
+
+.contact-sec .contact-part .name {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin: 40px 0px 20px;
+}
+
+.contact-sec .contact-part .name p {
+  font-size: 14px;
+  color: #555;
+}
+
+.contact-sec .contact-part .name input {
+  width: 100%;
+  display: inline-block;
+  border: none;
+  outline: none;
+  padding: 8px 10px;
+  font-size: 13px;
+  background: #fff;
+}
+
+.contact-sec .contact-part p {
+  font-size: 14px;
+  color: #555;
+}
+
+.contact-sec .contact-part input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: #fff;
+  display: inline-block;
+  padding: 8px 10px;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.contact-sec .contact-part textarea {
+  width: 100%;
+  border: none;
+  outline: none;
+  border: 1px solid #ccc;
+  padding-left: 5px;
+  padding-top: 10px;
+  background-color: #fff;
+}
+
+.contact-sec .contact-part textarea::placeholder {
+  font-size: 13px;
+  color: #555;
+}
+
+.contact-sec .contact-part iframe {
+  width: 100%;
+  height: 100vh;
+  border: 1px solid #ccc;
+  border-radius: 1rem;
+
+}
+
+/* ======= Contact Section Media Query Under 1130px====== */
+@media screen and (max-width:1130px) {
+
+  /* ======== Contact Section ======== */
+  .contact-sec {
+    width: 100%;
+    height: fit-content;
+    padding: 100px 30px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 4rem;
+    align-items: flex-start;
+    background-color: #e9f0f6;
+    margin: 50px auto 40px;
+  }
+}
+
+/* ======= Contact Section Media Query Under 730px====== */
+@media screen and (max-width:730px) {
+
+  /* ======== Contact Section ======== */
+  .contact-sec {
+    width: 100%;
+    height: fit-content;
+    padding: 100px 30px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 4rem;
+    align-items: flex-start;
+    background-color: #e9f0f6;
+    margin: 50px auto 40px;
+  }
+
+  .contact-sec .contact-part .name {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+    margin: 40px 0px 20px;
+  }
+
+  /* ======= Contact Left ======= */
+  .contact-sec .contact-part h2 {
+    font-size: 21px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 15px;
+    overflow-y: hidden;
+  }
+
+  .contact-sec .contact-part p {
+    font-size: 12px;
+    font-weight: 400;
+    color: #333;
+    margin-bottom: 15px;
+    overflow-y: hidden;
+  }
+}
+
+/* ========== WishList ========== */
+.wishlist {
+  width: 370px;
+  height: 100vh;
+  position: fixed;
+  top: 0%;
+  right: 0%;
+  background-color: #fff;
+  z-index: 6;
+  transition: 1s;
+}
+
+.wishlist .wishClose {
+  position: absolute;
+  top: 2%;
+  left: 5%;
+  color: #555;
+  font-size: 26px;
+  font-weight: 600;
+
+}
+
+/* ======== WishList Text ======== */
+.wishlist .wish-text {
+  margin-top: 60px;
+  text-align: center;
+
+}
+
+/* ====== WishList Heart ====== */
+.wishlist .heart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  outline: none;
+  margin-bottom: 10px;
+}
+
+.wishlist h2 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #555;
+  margin-bottom: 15px;
+  overflow-y: hidden;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.wishlist h2::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  display: block;
+  background-color: #555;
+  margin-top: 3px;
+}
+
+.wishlist h2:hover::after {
+  width: 100%;
+  transition: 0.5s;
+}
+
+.wishlist p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #555;
+  margin-bottom: 15px;
+  overflow-y: hidden;
+  text-transform: capitalize;
+  margin-top: 40px;
+}
+/* ======= WishList Media Query Under 730px ========= */
+@media screen  and (max-width:730px){
+  /* ========== WishList ========== */
+.wishlist {
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  top: 0%;
+  right: 0%;
+  background-color: #fff;
+  z-index: 6;
+  transition: 1s;
+}
+
+}
+/* ============ Compare ============ */
+.compare {
+  width: 370px;
+  height: 100vh;
+  position: fixed;
+  top: 0%;
+  right: 0%;
+  background-color: #fff;
+  z-index: 6;
+  transition: 1s;
+}
+
+.compare .compareClose {
+  position: absolute;
+  top: 2%;
+  left: 5%;
+  color: #555;
+  font-size: 26px;
+  font-weight: 600;
+
+}
+
+.compare .compareIcon {
+  justify-content: center;
+  color: #555;
+  font-size: 26px;
+  font-weight: #777;
+  text-align: center;
+  margin: 0px auto 10px;
+
+}
+/* ======= Compare Media Query Under 730px ========= */
+@media screen  and (max-width:730px){
+  /* ========== Compare ========== */
+.compare{
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  top: 0%;
+  right: 0%;
+  background-color: #fff;
+  z-index: 6;
+  transition: 1s;
+}
+
+}
+/* ======== Compare Text ======== */
+.compare .compare-text {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.compare h2 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #555;
+  margin-bottom: 15px;
+  overflow-y: hidden;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.compare h2::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  display: block;
+  background-color: #555;
+  margin-top: 3px;
+}
+
+.compare h2:hover::after {
+  width: 100%;
+  transition: 0.5s;
+}
+
+.compare p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #555;
+  margin-bottom: 15px;
+  overflow-y: hidden;
+  text-transform: capitalize;
+  margin-top: 40px;
+}
+
+/* ========== Cart ========== */
+.cart-tog {
+  width: 370px;
+  height: 100vh;
+  position: fixed;
+  top: 0%;
+  right: 0%;
+  background-color: #fff;
+  z-index: 6;
+  transition: 1s;
+}
+
+.cart-tog .cartClose {
+  position: absolute;
+  top: 2%;
+  left: 5%;
+  color: #555;
+  font-size: 26px;
+  font-weight: 600;
+
+}
+
+.cart-tog .cartIcon {
+  justify-content: center;
+  color: #555;
+  font-size: 26px;
+  font-weight: #777;
+  text-align: center;
+  margin: 0px auto 10px;
+
+}
+
+/* ======== Cart Text ======== */
+.cart-tog .cart-text {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.cart-tog h2 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #555;
+  margin-bottom: 15px;
+  overflow-y: hidden;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.cart-tog h2::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  display: block;
+  background-color: #555;
+  margin-top: 3px;
+}
+
+.cart-tog h2:hover::after {
+  width: 100%;
+  transition: 0.5s;
+}
+
+.cart-tog p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #555;
+  margin-bottom: 15px;
+  overflow-y: hidden;
+  text-transform: capitalize;
+  margin-top: 40px;
+}
+
+.cart-tog button {
+  display: inline-block;
+  padding: 9px 35px;
+  color: #fff;
+  background-color: #211e1e;
+  font-size: 13px;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+.cart-tog button:hover {
+  background-color: #2e4057;
+  transition: 0.5s;
+}
+/* ======= Cart Media Query Under 730px ========= */
+
+@media screen  and (max-width:730px){
+  /* ========== Cart ========== */
+.cart-tog{
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  top: 0%;
+  right: 0%;
+  background-color: #fff;
+  z-index: 6;
+  transition: 1s;
+}
+
+}
+
+/* ========== Nav Bar Media Query  Under 1130px ========== */
+
+@media screen and (max-width:1130px){
+  .nav-bar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    margin: auto;
+    padding: 10px 30px;
+  }
+  
+  /* ======== Navbar Left ======= */
+  .nav-bar .left{
+    display: block;
+   position: fixed;
+   top: 0%;
+   left: -2000%;
+   background-color: #fff;
+   width: 270px;
+   height: 100vh;
+   z-index: 8;
+   transition: 1s;
+  }
+.nav-bar .left ul {
+  margin: 50px auto 30px;
+  display: block;
+  padding: 40px 50px;
+  justify-content: center;
+}
+.nav-bar .left ul .closeLeft{
+  position: absolute;
+  top: 3%;
+  right: 3%;
+  opacity: 1;
+  color: #555;
+  font-size: 26px;
+  font-weight: 600;
+ }
+.nav-bar .left ul li{
+  display: block;
+  margin-bottom: 10px;
+}
+.nav-bar .left ul li .links {
+  color: #2e4057;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.link-wish{
+   opacity: 0;
+   display: none;
+   position: absolute;
+   top: -100%;
+}
+.link-com{
+  opacity: 0;
+  display: none;
+  position: absolute;
+  top: -100%;
+}
+.cart-shop{
+  font-size: 20px;
+}
+.logo{
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30px;
+  margin-top: 10px;
+}
+.nav-bar .showMenu{
+  font-size: 22px;
+  font-weight: 600;
+  color: #555;
+  opacity: 1;
+  }
+  .nav-bar .left ul li::after {
+    content: '';
+    width: 0%;
+    height: 3px;
+    display: block;
+    background-color: #0861BF;
+    margin-top: 3px;
+    margin-left: 1px;
+  }
+  .nav-bar .left ul li:hover::after {
+    width: 30%;
+    transition: 1s;
+  }
+}
